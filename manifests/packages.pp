@@ -1,5 +1,5 @@
 class nginx::packages( $ensure = "" ) {
 
-    $packages = [ "nginx", "perl", ]
+    $packages = [ "nginx", ]
     package { $packages: ensure => $ensure }
 }
